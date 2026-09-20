@@ -1,0 +1,22 @@
+{
+  "name": "aman-md-bot",
+  "version": "4.0.1",
+  "private": true,
+  "description": "AMAN-MD Telegram pairing controller and WhatsApp multi-device bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "check": "node --check index.js && node --check config.js && node --check lib/baileysManager.js && node --check lib/messageHandler.js && node --check lib/pairingServer.js && node --check lib/telegram.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
